@@ -89,7 +89,7 @@ cudaRemap(uchar *pSrcImg, uchar *pDstImg, float *pMapx, float *pMapy, int inWidt
     }
 }
 
-int main() {
+void get_fisheye_undistort(){
     const string old_path = "/media/ros/A666B94D66B91F4D/ros/test_port/camera/car2_train/test/dis/";  // 老的路径
     string new_path = "/media/ros/A666B94D66B91F4D/ros/test_port/camera/car2_train/test/undis/";  // 新的路径
     vector<string> file_name;
@@ -215,6 +215,15 @@ int main() {
 
 
     // cv::imwrite("/media/ros/A666B94D66B91F4D/ros/test_port/camera/car1_line/undistortImg.jpg", undistortImg);
+}
+
+void get_normal_undistort(){
+
+}
+
+int main() {
+
+    // get_fisheye_undistort();
 
     return 0;
 }
